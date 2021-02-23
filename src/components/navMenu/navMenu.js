@@ -1,11 +1,8 @@
 import React from 'react'
 import { Link } from "gatsby"
-import { Navbar, Nav, Container } from 'react-bootstrap';
-
-
+import { Navbar, Nav } from 'react-bootstrap';
 
 //styles
-
 const navMenuStyles = {
     borderBottom: "1px solid #E4E4E4",
     flexDirection: "column",
@@ -29,8 +26,7 @@ export default function navMenu() {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav 
                         activeKey="/home"
-                        onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
-                        
+                        onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}   
                     >
                         <Nav.Item>
                             <Nav.Link><Link to="/">Home</Link></Nav.Link>
