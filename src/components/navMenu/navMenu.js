@@ -32,19 +32,22 @@ export default function navMenu() {
                             <Nav.Link><Link to="/">Home</Link></Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link><Link to="/about/">About me</Link></Nav.Link>
+                            <Nav.Link><Link to="/about/">About</Link></Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link><Link to="/posts/">Posts</Link></Nav.Link>
+                            <Nav.Link><Link to="/services/">Services</Link></Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                         <Navbar.Brand><Link style={branding} to="/posts/">Arbitrary Author</Link></Navbar.Brand>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link><Link to="/contact/">Contact</Link></Nav.Link>
+                            <Nav.Link><Link to="/posts/">Blog</Link></Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link><Link to="/featured/">Featured in</Link></Nav.Link>
+                            <Nav.Link><Link to="/featured/">Featured</Link></Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link><Link to="/contact/">Contact</Link></Nav.Link>
                         </Nav.Item>
                     </Nav>
                 </Navbar.Collapse>
