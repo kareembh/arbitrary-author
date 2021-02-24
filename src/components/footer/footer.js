@@ -18,7 +18,7 @@ const footerText = {
 export default function footer() {
     return (
         <Row style={footerStyle}>
-            <p style={footerText}>@2021 Arbitrary Author. All Rights Reserved</p>
+            <p style={footerText}>@2021 Arbitrary Author. All Rights Reserved.</p>
         </Row>
     )
 }
