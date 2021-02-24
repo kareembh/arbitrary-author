@@ -21,7 +21,7 @@ const navMenuPosition = {
 
 export default function navMenu() {
     return (
-            <Navbar sticky="top" expand="lg" sticky="top" style={navMenuPosition, navMenuStyles}>
+            <Navbar expand="lg" sticky="top" style={navMenuPosition, navMenuStyles}>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav 
