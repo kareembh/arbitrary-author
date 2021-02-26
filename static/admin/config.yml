@@ -10,7 +10,7 @@ public_folder: /assets
 collections:
   - name: blog
     label: Blog
-    folder: content
+    folder: blog
     create: true
     fields:
       - { name: date, label: Date, widget: datetime }
