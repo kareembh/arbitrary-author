@@ -13,7 +13,8 @@ collections:
     folder: blog
     create: true
     fields:
-      - { name: date, label: Date, widget: datetime }
-      - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
-      - {label: image, name: image, widget: image}
+      - { name: "date", label: "Date", format: "MMM Do YY", widget: datetime }
+      - { name: "title", label: "Title" }
+      - { name: "description", label: "description", widget: "text"}
+      - { name: "body", label: "Body", widget: "markdown" }
+      - { name: "image", label: "Image", widget: "image"}
