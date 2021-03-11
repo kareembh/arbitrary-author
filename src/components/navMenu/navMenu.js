@@ -4,9 +4,11 @@ import { Navbar, Nav } from 'react-bootstrap';
 
 //styles
 const navMenuStyles = {
-    borderBottom: "1px solid #E4E4E4",
+    borderBottom: "2px solid #E4E4E4",
     flexDirection: "column",
-    backgroundColor: "#ffffff"
+    backgroundColor: "#ffffff",
+    marginBottom: "30px",
+    height: "70px"
   }
 
 const navMenuPosition = {
