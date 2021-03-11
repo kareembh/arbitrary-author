@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button } from 'react-bootstrap';
+import { Link } from "gatsby"
 
 const postStyles = {
     width: "300px",
@@ -17,7 +18,7 @@ export default function postThumbnail(props) {
                 <h3>{props.postThumbnailTitle}</h3>
                 <p>{props.postThumbnailDescription}</p>
                 <p>{props.postThumbnailDate}</p>
-                <Button variant="dark">Continue reading</Button>
+                <Button variant="dark"><Link to={props.postThumbnailSlug}>Continue reading</Link></Button>
             </div>
         </div>
     )
