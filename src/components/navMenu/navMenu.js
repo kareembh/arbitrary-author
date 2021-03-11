@@ -7,7 +7,7 @@ const navMenuStyles = {
     borderBottom: "2px solid #E4E4E4",
     flexDirection: "column",
     backgroundColor: "#ffffff",
-    marginBottom: "30px",
+    marginBottom: "55px",
     height: "70px"
   }
 
@@ -31,19 +31,13 @@ export default function navMenu() {
                         onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}   
                     >
                         <Nav.Item>
-                            <Nav.Link><Link to="/">Home</Link></Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
                             <Nav.Link><Link to="/about/">About</Link></Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link><Link to="/services/">Services</Link></Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                        <Navbar.Brand><Link style={branding} to="/posts/">Arbitrary Author</Link></Navbar.Brand>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link><Link to="/posts/">Blog</Link></Nav.Link>
+                        <Navbar.Brand><Link style={branding} to="/">Arbitrary Author</Link></Navbar.Brand>
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link><Link to="/featured/">Featured</Link></Nav.Link>
