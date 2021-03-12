@@ -12,14 +12,14 @@ export const query = graphql`
       edges {
         node {
           id
+          excerpt(pruneLength: 250)
+          fields {
+            slug
+          }
           frontmatter {
             title
             image
             date
-            description
-          }
-          fields {
-            slug
           }
         }
       }
@@ -39,14 +39,14 @@ const IndexPage = (props) => {
       {posts &&
         posts.map((post) => {
           // destructuring data object
-          const {frontmatter, fields, id} = post.node;
+          const {frontmatter, fields, id, excerpt} = post.node;
           return (
             // returning posts components with destructured data
             <Col lg={4} md={6} sm={12} key={id}>
               <PostThumbnail
                 postThumbnailImage={frontmatter.image}
                 postThumbnailTitle={frontmatter.title}
-                postThumbnailDescription={frontmatter.description}
+                postThumbnailDescription={excerpt}
                 postThumbnailDate={frontmatter.date}
                 postThumbnailSlug={fields.slug}
               />
