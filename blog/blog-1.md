@@ -1,5 +1,5 @@
 ---
-date: Mar 11th 21
+date: Mar 1st 21
 title: "Blog #1"
 image: /assets/taikan-yokoyama-mount-penglai.jpg
 ---
