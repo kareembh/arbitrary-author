@@ -10,9 +10,10 @@ export default function postThumbnail(props) {
         <div className="postThumbnailStyles">
             <img src={props.postThumbnailImage} className="postThumbnailImage" alt="" />
             <div>
+                <h3 className="postThumbnailTag">{props.postThumbnailTag}</h3>
                 <h3 className="postThumbnailHeader">{props.postThumbnailTitle}</h3>
                 <p className="postThumbnailBody">{props.postThumbnailDescription}</p>
-                <p className="postThumbnailDate">Posted by <b>Arbitrary Author</b> on {props.postThumbnailDate}</p>
+                <p className="postThumbnailDate">Posted by <b>{props.postThumbnailAuthor}</b> on {props.postThumbnailDate}</p>
                 <Link to={props.postThumbnailSlug}><Button className="postThumbnailButton">Continue reading</Button></Link>
             </div>
         </div>

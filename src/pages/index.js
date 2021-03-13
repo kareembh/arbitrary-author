@@ -20,6 +20,8 @@ export const query = graphql`
             title
             image
             date
+            tag
+            author
           }
         }
       }
@@ -49,6 +51,8 @@ const IndexPage = (props) => {
                 postThumbnailDescription={excerpt}
                 postThumbnailDate={frontmatter.date}
                 postThumbnailSlug={fields.slug}
+                postThumbnailAuthor={frontmatter.author}
+                postThumbnailTag={frontmatter.tag}
               />
             </Col>
           );
