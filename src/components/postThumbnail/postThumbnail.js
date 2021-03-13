@@ -1,24 +1,19 @@
 import React from 'react'
 import { Button } from 'react-bootstrap';
 import { Link } from "gatsby"
+import "./postThumbnail.scss"
 
-const postStyles = {
-    width: "300px",
-    border: "2px grey solid"
-}
-const postImageStyles = {
-    width: "300px",
-}
+
 
 export default function postThumbnail(props) {
     return (
-        <div style={postStyles}>
-            <img src={props.postThumbnailImage} style={postImageStyles} alt="" />
+        <div className="postThumbnailStyles">
+            <img src={props.postThumbnailImage} className="postThumbnailImage" alt="" />
             <div>
-                <h3>{props.postThumbnailTitle}</h3>
-                <p>{props.postThumbnailDescription}</p>
-                <p>{props.postThumbnailDate}</p>
-                <Button variant="dark"><Link to={props.postThumbnailSlug}>Continue reading</Link></Button>
+                <h3 className="postThumbnailHeader">{props.postThumbnailTitle}</h3>
+                <p className="postThumbnailBody">{props.postThumbnailDescription}</p>
+                <p className="postThumbnailDate">Posted by <b>Arbitrary Author</b> on {props.postThumbnailDate}</p>
+                <Link to={props.postThumbnailSlug}><Button className="postThumbnailButton">Continue reading</Button></Link>
             </div>
         </div>
     )
