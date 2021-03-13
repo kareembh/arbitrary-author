@@ -1,6 +1,8 @@
 ---
 date: Mar 5th 21
 title: "Blog #3"
+tag: ADHD
+author: Arbitrary Author
 image: /assets/hokusai-great-wave-off-kanagawa.jpg
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus tellus lectus, at facilisis velit volutpat ut. Quisque dignissim neque nunc, feugiat feugiat elit tristique non. Curabitur quis nibh posuere, mattis enim ut, pharetra nunc. Mauris at mi imperdiet, consectetur lacus at, posuere sapien. Donec eu imperdiet arcu, gravida dignissim nibh. Sed pulvinar velit quis erat sodales, at pulvinar neque interdum. Nam ut feugiat tortor. Proin odio dui, aliquam vitae turpis nec, posuere tincidunt libero. Donec tempus augue non viverra ornare.
