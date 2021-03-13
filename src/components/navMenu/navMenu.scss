@@ -1,0 +1,38 @@
+.navMenuStyles{
+    border-bottom: 2px solid #E4E4E4;
+    // justify-content: center;
+    background-color: #ffffff;
+    margin-bottom: 55px;
+    height: 70px;
+  }
+
+.navMenuPosition{
+    max-width: 100%;
+}
+
+.branding{
+    color: #171717;
+    font-family: Lora;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    margin-left: 9px;
+  }
+  .branding:hover{
+      text-decoration: none;
+  }
+
+  .navMenuItem{
+      a{
+        font-family: Open Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: normal;
+        color: #666666;
+        line-height: 19px;
+      }
+      a:hover{
+          text-decoration: none;
+      }
+  }

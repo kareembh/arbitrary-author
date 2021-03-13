@@ -1,15 +1,16 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout/layout"
+import "./blogPost.scss"
 
 
 export default function BlogPost({ data }) {
   const post = data.markdownRemark
   return (
     <Layout>
-      <div style={{margin: `0 auto`, maxWidth: 800}}>
+      <div className="blogPostStyle">
         <h1>{post.frontmatter.title}</h1>
-        <p>{post.frontmatter.date}</p>
+        <p>Posted by <b>{post.frontmatter.author}</b> on {post.frontmatter.date}</p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </Layout>
@@ -24,6 +25,8 @@ export const query = graphql`
         title
         image
         date
+        tag
+        author
       }
     }
   }
