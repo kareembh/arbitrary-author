@@ -12,9 +12,9 @@ collections:
     label: Blog
     folder: blog
     create: true
-    sortable_fields: 'date:desc'
+    sortable_fields: 'date'
     fields:
-      - { name: "date", label: "Date", format: "MMMM DD YYYY", widget: datetime }
+      - { name: "post_date", label: "Post Date", default: "", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: true, widget: datetime }
       - { name: "title", label: "Title", widget: "string" }
       - { name: "tag", label: "Tag", widget: "string" }
       - { name: "author", label: "Author", widget: "string" }
