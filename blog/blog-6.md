@@ -1,5 +1,5 @@
 ---
-date: Mar 15th 21
+date: Mar 16th 21
 title: "Blog #6"
 tag: travel
 author: The Arbitrary Author
