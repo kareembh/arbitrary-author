@@ -7,9 +7,9 @@ import "./postThumbnail.scss"
 
 export default function postThumbnail(props) {
     return (
-        <div className="postThumbnailStyles">
+        <div className={props.postThumbnailStyles}>
             <img src={props.postThumbnailImage} className="postThumbnailImage" alt="" />
-            <div>
+            <div className="featuredPostContent">
                 <h3 className="postThumbnailTag">{props.postThumbnailTag}</h3>
                 <h3 className="postThumbnailHeader">{props.postThumbnailTitle}</h3>
                 <p className="postThumbnailBody">{props.postThumbnailDescription}</p>

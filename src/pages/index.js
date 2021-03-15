@@ -12,7 +12,7 @@ export const query = graphql`
       edges {
         node {
           id
-          excerpt(pruneLength: 250)
+          excerpt(pruneLength: 300)
           fields {
             slug
           }
@@ -34,18 +34,33 @@ const IndexPage = (props) => {
 
   //assigning an array of data objects to the posts variable
   const posts = props.data.allMarkdownRemark.edges;
-
+  
   return (
       <Layout>
         <Row>
+          <Col lg={12} md={12} sm={12}>
+            <PostThumbnail
+              postThumbnailStyles="featuredPost"
+              postThumbnailImage={posts[0].node.frontmatter.image}
+              postThumbnailTitle={posts[0].node.frontmatter.title}
+              postThumbnailDescription={posts[0].node.excerpt}
+              postThumbnailDate={posts[0].node.frontmatter.date}
+              postThumbnailSlug={posts[0].node.fields.slug}
+              postThumbnailAuthor={posts[0].node.frontmatter.author}
+              postThumbnailTag={posts[0].node.frontmatter.tag}
+            />
+          </Col>
+        </Row>
+        <Row>
       {posts &&
-        posts.map((post) => {
+        posts.slice(1).map((post) => {
           // destructuring data object
           const {frontmatter, fields, id, excerpt} = post.node;
           return (
             // returning posts components with destructured data
             <Col lg={4} md={6} sm={12} key={id}>
               <PostThumbnail
+                postThumbnailStyles="postThumbnailStyles"
                 postThumbnailImage={frontmatter.image}
                 postThumbnailTitle={frontmatter.title}
                 postThumbnailDescription={excerpt}
