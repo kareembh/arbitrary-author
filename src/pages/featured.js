@@ -1,10 +1,12 @@
 import React from 'react'
 import Layout from "../components/layout/layout"
+import Podcasts from "../components/podcasts/podcasts"
 
-export default function about() {
+const  featured = (props) => {
     return (
         <Layout>
-            <h1>Featured</h1>
+            <Podcasts></Podcasts>
         </Layout>
     )
 }
+export default featured;
