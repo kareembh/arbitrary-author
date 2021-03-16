@@ -1,5 +1,5 @@
 ---
-date: Mar 5th 21
+date: March 5, 2021 5:00 AM
 title: "Blog #3"
 tag: ADHD
 author: Arbitrary Author
