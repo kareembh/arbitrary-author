@@ -8,15 +8,23 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/static/assets`,
         name: 'images',
+        path: `${__dirname}/static/assets`,
+        
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `content`,
-        path: `${__dirname}/blog`,
+        name: `blog`,
+        path: `${__dirname}/content/blog`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `podcasts`,
+        path: `${__dirname}/content/podcasts`,
       },
     },
     'gatsby-transformer-remark',
