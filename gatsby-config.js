@@ -17,14 +17,14 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `blog`,
-        path: `${__dirname}/content/blog`,
+        path: `${__dirname}/blog`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `podcasts`,
-        path: `${__dirname}/content/podcasts`,
+        path: `${__dirname}/podcasts`,
       },
     },
     'gatsby-transformer-remark',
