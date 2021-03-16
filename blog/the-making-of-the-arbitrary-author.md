@@ -1,5 +1,5 @@
 ---
-date: Mar 15th 21
+date: March 16, 2021 3:42 AM
 title: The Making of The Arbitrary Author
 tag: Story Telling
 author: The Arbitrary Author
