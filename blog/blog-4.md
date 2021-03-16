@@ -1,5 +1,5 @@
 ---
-date: Mar 8th 21
+date: March 8, 2021 5:00 AM
 title: "Blog #4"
 tag: Art
 author: Arbitrary Author
