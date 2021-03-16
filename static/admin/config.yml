@@ -9,8 +9,9 @@ public_folder: /assets
 
 collections:
   - name: blog
+    identifier_field: name
     label: Blog
-    folder: blog
+    folder: content/blog
     create: true
     sortable_fields: ['date', 'commit_date', 'fields.date']
     fields:
@@ -22,8 +23,9 @@ collections:
       - { name: "image", label: "Image", widget: "image"}
 
   - name: podcasts
+    identifier_field: name
     label: Podcasts
-    folder: podcasts
+    folder: content/podcasts
     create: true
     fields:
       - { name: "date", label: "Post Date", default: "", date_format: "MMMM DD YYYY", time_format: "HH:mm", format: "LLL", picker_utc: false, widget: 'datetime' }
