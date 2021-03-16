@@ -8,7 +8,7 @@ import { graphql } from "gatsby"
 //query
 export const query = graphql`
   {
-    allMarkdownRemark{
+    allMarkdownRemark(sort: {fields: frontmatter___date, order: ASC}){
       edges {
         node {
           id
