@@ -1,5 +1,5 @@
 ---
-date: Mar 15th 21
+date: March 15, 2021 4:00 AM
 title: The Arbitrary Author
 tag: Story Telling
 author: Arbitrary Author

@@ -1,5 +1,5 @@
 ---
-date: Mar 3rd 21
+date: March 1, 2021 11:39 AM
 title: "Blog #2"
 tag: Travel
 author: Arbitrary Author
