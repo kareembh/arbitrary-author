@@ -1,6 +1,7 @@
 ---
 date: March 9, 2021 12:00 AM
 heading: Blog 3
+title: blog
 tag: travel
 author: kareem
 image: /assets/hokusai-great-wave-off-kanagawa.jpg
