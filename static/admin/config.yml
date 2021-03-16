@@ -12,9 +12,7 @@ collections:
     label: Blog
     folder: blog
     create: true
-    sortable_fields:
-       ['date', 'commit_date']
-       type: "desc"
+    sortable_fields: ['date', 'commit_date'] type: "desc"
     fields:
       - { name: "date", label: "Post Date", widget: 'datetime' }
       - { name: "title", label: "Title", widget: "string" }
