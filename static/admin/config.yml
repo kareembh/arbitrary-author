@@ -9,14 +9,14 @@ media_folder: static/assets
 public_folder: /assets
 
 collections:
+  
   - name: blog
-    identifier_field: name
     label: Blog
     folder: blog
     create: true
     sortable_fields: ['date', 'commit_date', 'fields.date', 'title']
     fields:
-      - { name: "date", label: "Post Date", default: "", date_format: "MMMM DD YYYY", time_format: "HH:mm", format: "LLL", picker_utc: true, widget: 'datetime' }
+      - { name: "date", label: "Post Date", default: "", date_format: "MMMM DD YYYY", picker_utc: true, widget: 'datetime' }
       - { name: "title", label: "Title", widget: "string" }
       - { name: "tag", label: "Tag", widget: "string" }
       - { name: "author", label: "Author", widget: "string" }
@@ -24,12 +24,11 @@ collections:
       - { name: "image", label: "Image", widget: "image"}
 
   - name: podcasts
-    identifier_field: name
     label: Podcasts
     folder: podcasts
     create: true
     fields:
-      - { name: "podcast_date", label: "Podcast Date", default: "", date_format: "MMMM DD YYYY", time_format: "HH:mm", format: "LLL", picker_utc: false, widget: 'datetime' }
+      - { name: "podcast_date", label: "Podcast Date", default: "", date_format: "MMMM DD YYYY", picker_utc: false, widget: 'datetime' }
       - { name: "podcast_title", label: "Podcast Title", widget: "string" }
       - { name: "podcast_description",label: "Podcast Description", widget: "text"}
       - { name: "podcast_url", label: "Podcast URL",  widget: "text"}
