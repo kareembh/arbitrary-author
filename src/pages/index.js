@@ -8,20 +8,22 @@ import { graphql } from "gatsby"
 //query
 export const query = graphql`
   {
-    allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}){
+    allFile(filter: {sourceInstanceName: {eq: "blog"}}) {
       edges {
         node {
-          id
-          excerpt(pruneLength: 300)
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            image
-            date
-            tag
-            author
+          childMarkdownRemark {
+            frontmatter {
+              title
+              tag
+              image
+              date
+              author
+            }
+            excerpt(pruneLength: 300)
+            fields {
+              slug
+            }
+            html
           }
         }
       }
@@ -33,7 +35,7 @@ export const query = graphql`
 const IndexPage = (props) => {
 
   //assigning an array of data objects to the posts variable
-  const posts = props.data.allMarkdownRemark.edges;
+  const posts = props.data.allFile.edges;
   
   return (
       <Layout>
@@ -41,24 +43,26 @@ const IndexPage = (props) => {
           <Col lg={12} md={12} sm={12}>
             <PostThumbnail
               postThumbnailStyles="featuredPost"
-              postThumbnailImage={posts[0].node.frontmatter.image}
-              postThumbnailTitle={posts[0].node.frontmatter.title}
-              postThumbnailDescription={posts[0].node.excerpt}
-              postThumbnailDate={posts[0].node.frontmatter.date}
-              postThumbnailSlug={posts[0].node.fields.slug}
-              postThumbnailAuthor={posts[0].node.frontmatter.author}
-              postThumbnailTag={posts[0].node.frontmatter.tag}
+              postThumbnailImage={posts[0].node.childMarkdownRemark.frontmatter.image}
+              postThumbnailTitle={posts[0].node.childMarkdownRemark.frontmatter.title}
+              postThumbnailDescription={posts[0].node.childMarkdownRemark.excerpt}
+              postThumbnailDate={posts[0].node.childMarkdownRemark.frontmatter.date}
+              postThumbnailSlug={posts[0].node.childMarkdownRemark.fields.slug}
+              postThumbnailAuthor={posts[0].node.childMarkdownRemark.frontmatter.author}
+              postThumbnailTag={posts[0].node.childMarkdownRemark.frontmatter.tag}
             />
           </Col>
         </Row>
         <Row>
-      {posts &&
-        posts.slice(1).map((post) => {
+          {/* <Col lg={9}>
+            <Row> */}
+        {posts &&
+        posts.map((post) => {
           // destructuring data object
-          const {frontmatter, fields, id, excerpt} = post.node;
+          const { frontmatter, fields, id, excerpt} = post.node.childMarkdownRemark;
           return (
             // returning posts components with destructured data
-            <Col lg={4} md={6} sm={12} key={id}>
+            <Col lg={4} md={4} sm={12} key={id}>
               <PostThumbnail
                 postThumbnailStyles="postThumbnailStyles"
                 postThumbnailImage={frontmatter.image}
@@ -72,6 +76,8 @@ const IndexPage = (props) => {
             </Col>
           );
         })}
+        {/* </Row>
+        </Col> */}
         </Row>
       </Layout>
     
