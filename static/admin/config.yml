@@ -26,6 +26,8 @@ collections:
   - name: podcasts
     label: Podcasts
     folder: podcasts
+    identifier_field: "{{podcast_title}}"
+    slug: "{{podcast_title}}"
     create: true
     fields:
       - { name: "podcast_date", label: "Podcast Date", default: "", date_format: "MMMM DD YYYY", picker_utc: false, widget: 'datetime' }
@@ -33,3 +35,4 @@ collections:
       - { name: "podcast_description",label: "Podcast Description", widget: "text"}
       - { name: "podcast_url", label: "Podcast URL",  widget: "text"}
       - { name: "podcast_image", label: "Podcast Image", widget: "image"}
+      
