@@ -8,7 +8,6 @@ export const query = graphql`
     allFile(filter: {sourceInstanceName: {eq: "podcasts"}}) {
       edges {
         node {
-          id
           childMarkdownRemark {
             frontmatter {
               podcast_date
@@ -18,6 +17,7 @@ export const query = graphql`
               podcast_url
               tag
             }
+            id
           }
         }
       }
@@ -31,20 +31,15 @@ const podcasts = (props) => {
     return (
         <Layout>
             <Row>
-            {posts &&
+            {/* {posts &&
                 podcasts.map((podcast) => {
                 // destructuring data object
                 const { frontmatter, fields, id, excerpt} = podcast.node.childMarkdownRemark;
                 return (
                     // returning posts components with destructured dat
-                    
-                        
-                        
                         <p>{frontmatter.title}</p>
-                        
-                    
                 );
-                })}
+                })} */}
             </Row>
         </Layout>
     )
