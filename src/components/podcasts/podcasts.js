@@ -29,7 +29,6 @@ const podcasts = (props) => {
     // const podcasts = props.data.allFile.edges;
     // console.log(podcasts);
     return (
-        <Layout>
             <Row>
             {/* {posts &&
                 podcasts.map((podcast) => {
@@ -41,7 +40,6 @@ const podcasts = (props) => {
                 );
                 })} */}
             </Row>
-        </Layout>
     )
 }
 export default podcasts;
