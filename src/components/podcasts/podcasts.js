@@ -26,8 +26,8 @@ export const query = graphql`
 `
 
 const podcasts = (props) => {
-    const podcasts = props.data.allFile.edges;
-    console.log(podcasts);
+    // const podcasts = props.data.allFile.edges;
+    // console.log(podcasts);
     return (
         <Layout>
             <Row>
