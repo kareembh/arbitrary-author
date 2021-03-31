@@ -1,45 +1,49 @@
 import React from 'react'
-import { graphql } from "gatsby"
-import Layout from "../layout/layout"
-import {Row, Col } from 'react-bootstrap';
+import { useStaticQuery, graphql } from "gatsby"
+import {Row, Col} from 'react-bootstrap';
 
-export const query = graphql`
-  {
-    allFile(filter: {sourceInstanceName: {eq: "podcasts"}}) {
-      edges {
-        node {
-          childMarkdownRemark {
-            frontmatter {
-              podcast_date
-              podcast_description
-              podcast_image
-              podcast_title
-              podcast_url
-              tag
+const Podcasts = (props) => {
+
+    const data = useStaticQuery(graphql`
+    {
+        allFile(filter: {sourceInstanceName: {eq: "podcasts"}}) {
+          edges {
+            node {
+              id
+              childMarkdownRemark {
+                frontmatter {
+                  podcast_date(formatString: "DD, MMMM, YYYY")
+                  podcast_description
+                  podcast_image
+                  podcast_title
+                  podcast_url
+                }
+              }
             }
-            id
           }
         }
       }
-    }
-  }
-`
+    `)
 
-const podcasts = (props) => {
-    // const podcasts = props.data.allFile.edges;
-    // console.log(podcasts);
+    const podcasts = data.allFile.edges;
     return (
             <Row>
-            {/* {posts &&
+            {podcasts &&
                 podcasts.map((podcast) => {
                 // destructuring data object
-                const { frontmatter, fields, id, excerpt} = podcast.node.childMarkdownRemark;
+                const {frontmatter} = podcast.node.childMarkdownRemark;
                 return (
-                    // returning posts components with destructured dat
-                        <p>{frontmatter.title}</p>
+                    <Col key={podcast.node.id}>
+                        <h3>{frontmatter.podcast_title}</h3>
+                        <img src={frontmatter.podcast_image} alt="" />
+                        <p>{frontmatter.podcast_description}</p>
+                        <p>{frontmatter.podcast_url}</p>
+                        <p>{frontmatter.podcast_date}</p>
+                    </Col>
                 );
-                })} */}
+                })}
+                
             </Row>
     )
 }
-export default podcasts;
+export default Podcasts;

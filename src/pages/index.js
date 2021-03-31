@@ -3,40 +3,39 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import PostThumbnail from "../components/postThumbnail/postThumbnail"
 import Layout from "../components/layout/layout"
 import {Row, Col } from 'react-bootstrap';
-import { graphql } from "gatsby"
-
-//query
-export const query = graphql`
-  {
-    allFile(filter: {sourceInstanceName: {eq: "blog"}}) {
-      edges {
-        node {
-          childMarkdownRemark {
-            frontmatter {
-              title
-              tag
-              image
-              date
-              author
-            }
-            id
-            excerpt(pruneLength: 300)
-            fields {
-              slug
-            }
-            html
-          }
-        }
-      }
-    }
-  }
-`
+import { useStaticQuery, graphql } from "gatsby"
 
 // markup
 const IndexPage = (props) => {
 
+  const data = useStaticQuery(graphql`
+    {
+      allFile(filter: {sourceInstanceName: {eq: "blog"}}) {
+        edges {
+          node {
+            id
+            childMarkdownRemark {
+              fields {
+                slug
+              }
+              excerpt(pruneLength: 300)
+              html
+              frontmatter {
+                author
+                date
+                heading
+                image
+                tag
+                title
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
   //assigning an array of data objects to the posts variable
-  const posts = props.data.allFile.edges;
+  const posts = data.allFile.edges;
   
   return (
       <Layout>
@@ -60,10 +59,10 @@ const IndexPage = (props) => {
         {posts &&
         posts.map((post) => {
           // destructuring data object
-          const { frontmatter, fields, id, excerpt} = post.node.childMarkdownRemark;
+          const { frontmatter, fields, excerpt} = post.node.childMarkdownRemark;
           return (
             // returning posts components with destructured data
-            <Col lg={4} md={4} sm={12} key={id}>
+            <Col lg={4} md={4} sm={12} key={post.node.id}>
               <PostThumbnail
                 postThumbnailStyles="postThumbnailStyles"
                 postThumbnailImage={frontmatter.image}
