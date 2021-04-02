@@ -25,7 +25,7 @@ collections:
   - name: podcasts
     label: Podcasts
     folder: podcasts
-    identifier_field: "{{podcast_title}}"
+    identifier_field: "podcast_title"
     create: true
     fields:
       - { name: "podcast_date", label: "Podcast Date", default: "", date_format: "MMMM DD YYYY", picker_utc: false, widget: 'datetime' }
