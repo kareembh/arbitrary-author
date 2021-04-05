@@ -1,11 +1,11 @@
 import React from 'react'
 import Layout from "../components/layout/layout"
-import Podcasts from "../components/podcasts/podcasts"
+import PodcastList from "../components/podcastList/podcastList"
 
 const  featured = (props) => {
     return (
         <Layout>
-            <Podcasts></Podcasts>
+            <PodcastList></PodcastList>
         </Layout>
     )
 }
