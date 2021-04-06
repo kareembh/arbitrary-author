@@ -9,8 +9,7 @@ export default function navMenu() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" style={{justifyContent: "center"}}>
                     <Nav 
-                        activeKey="/home"
-                        onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}   
+                        activeKey="/home"   
                     >
                         <Nav.Item>
                             <Nav.Link className="navMenuItem"><Link to="/about/">About</Link></Nav.Link>
