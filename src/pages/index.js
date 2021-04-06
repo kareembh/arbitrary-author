@@ -53,11 +53,9 @@ const IndexPage = (props) => {
             />
           </Col>
         </Row>
-        <Row>
-          {/* <Col lg={9}>
-            <Row> */}
+        <Row>    
         {posts &&
-        posts.map((post) => {
+        posts.slice(1).map((post) => {
           // destructuring data object
           const { frontmatter, fields, excerpt} = post.node.childMarkdownRemark;
           return (
@@ -76,8 +74,6 @@ const IndexPage = (props) => {
             </Col>
           );
         })}
-        {/* </Row>
-        </Col> */}
         </Row>
       </Layout>
     
