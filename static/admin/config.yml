@@ -35,13 +35,13 @@ collections:
       - { name: "podcast_image", label: "Podcast Image", widget: "image"}
     
   - name: coffeeBreak
-      label: Coffee Break
-      folder: coffeeBreak
-      identifier_field: "coffeeBreak_title"
-      create: true
-      fields:
-        - { name: "coffeeBreak_date", label: "Date", default: "", date_format: "MMMM DD YYYY", picker_utc: false, widget: 'datetime' }
-        - { name: "coffeeBreak_title", label: "Title", widget: "string" }
-        - { name: "coffeeBreak_description",label: "Description", widget: "text"}
-        - { name: "podcast_image", label: "Podcast Image", widget: "image"}
+    label: Coffee Break
+    folder: coffeeBreak
+    identifier_field: "coffeeBreak_title"
+    create: true
+    fields:
+      - { name: "coffeeBreak_date", label: "Date", default: "", date_format: "MMMM DD YYYY", picker_utc: false, widget: 'datetime' }
+      - { name: "coffeeBreak_title", label: "Title", widget: "string" }
+      - { name: "coffeeBreak_description",label: "Description", widget: "text"}
+      - { name: "podcast_image", label: "Podcast Image", widget: "image"}
         
