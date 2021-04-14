@@ -30,7 +30,7 @@ collections:
     fields:
       - { name: "podcast_date", label: "Podcast Date", default: "", date_format: "MMMM DD YYYY", picker_utc: false, widget: 'datetime' }
       - { name: "podcast_title", label: "Podcast Title", widget: "string" }
-      - { name: "body",label: "Podcast Description", widget: "text"}
+      - { name: "body",label: "Podcast Description", widget: "markdown"}
       - { name: "podcast_url", label: "Podcast URL",  widget: "text"}
       - { name: "podcast_image", label: "Podcast Image", widget: "image"}
     
@@ -42,7 +42,28 @@ collections:
     fields:
       - { name: "coffeeBreak_date", label: "Date", default: "", date_format: "MMMM DD YYYY", picker_utc: false, widget: 'datetime' }
       - { name: "coffeeBreak_title", label: "Title", widget: "string" }
-      - { name: "body", label: "Description", widget: "text"}
+      - { name: "body", label: "Description", widget: "markdown"}
       - { name: "coffeeBreak_image", label: "Coffee Break Image", widget: "image"}
       - { name: "coffeeBreak_audio", label: "Audio", widget: "file", default: ""}
-        
+
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "about"
+        label: "About Page"
+        file: "site/content/about.yml"
+        fields:
+          - { name: "title" label: "Title", widget: "string"}
+          - { name: "about", label: "About Content", widget: "markdown"}
+          - { name: "about_image", label: "About Image", widget: "image"}
+
+      - name: "contact"
+        label: "Contact Page"
+        file: "site/content/contact.yml"
+        fields:
+          - { name: "title", label: "Title", widget: "string"}
+          - { name: "contact", label: "Contact Content", widget: "markdown"}
+          - { name: "about_image", label: "About Image", widget: "image"}
+          
+
+      

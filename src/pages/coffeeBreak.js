@@ -4,6 +4,7 @@ import Layout from '../components/layout/layout'
 import {Row, Col } from 'react-bootstrap';
 import CoffeeBreakThumbnail from '../components/coffeeBreakThumbnail/coffeeBreakThumbnail'
 
+
 const CoffeeBreak = (props) => {
 
     const data = useStaticQuery(graphql`

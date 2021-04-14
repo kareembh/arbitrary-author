@@ -1,12 +1,7 @@
 import React from 'react'
+import AudioPlayer from 'react-h5-audio-player';
+import 'react-h5-audio-player/src/styles.scss'
 
-const coffeeBreak = {
-    width: "300px"
-}
-
-const postThumbnailImage = {
-    width: "300px"
-}
 
 const CoffeeBreakThumbnail = (props) =>{
     return (
@@ -16,10 +11,13 @@ const CoffeeBreakThumbnail = (props) =>{
                 <h3 className="coffeeBreakThumbnailHeader">{props.coffeeBreakThumbnailHeader}</h3>
                 {/* <p className="coffeeBreakThumbnailBody">{props.coffeeBreakThumbnailDescription}</p> */}
                 <p className="coffeeBreakThumbnailDate">{props.coffeeBreakThumbnailDate}</p>
-                <audio controls>
-                    <source src={props.offeeBreakAudio} type="audio/mpeg" />
-                    Your browser does not support the audio element.
-                </audio>
+                <AudioPlayer
+                    autoPlay
+                    src={props.offeeBreakAudio}
+                    onPlay={e => console.log("onPlay")}
+                    // other props here
+                />
+                
                 {/* <Link to={props.postThumbnailSlug}><Button className="postThumbnailButton">Continue reading</Button></Link> */}
             </div>
         </div>
