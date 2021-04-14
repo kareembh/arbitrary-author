@@ -27,6 +27,13 @@ module.exports = {
         path: `${__dirname}/podcasts`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `coffeeBreak`,
+        path: `${__dirname}/coffeeBreak`,
+      },
+    },
     'gatsby-transformer-remark',
   ],
 };
