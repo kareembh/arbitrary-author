@@ -22,7 +22,7 @@ const IndexPage = (props) => {
               html
               frontmatter {
                 author
-                date
+                blog_date(formatString: "MMMM DD YYYY")
                 heading
                 image
                 tag
@@ -46,7 +46,7 @@ const IndexPage = (props) => {
               postThumbnailImage={posts[0].node.childMarkdownRemark.frontmatter.image}
               postThumbnailTitle={posts[0].node.childMarkdownRemark.frontmatter.title}
               postThumbnailDescription={posts[0].node.childMarkdownRemark.excerpt}
-              postThumbnailDate={posts[0].node.childMarkdownRemark.frontmatter.date}
+              postThumbnailDate={posts[0].node.childMarkdownRemark.frontmatter.blog_date}
               postThumbnailSlug={posts[0].node.childMarkdownRemark.fields.slug}
               postThumbnailAuthor={posts[0].node.childMarkdownRemark.frontmatter.author}
               postThumbnailTag={posts[0].node.childMarkdownRemark.frontmatter.tag}
@@ -66,7 +66,7 @@ const IndexPage = (props) => {
                 postThumbnailImage={frontmatter.image}
                 postThumbnailTitle={frontmatter.title}
                 postThumbnailDescription={excerpt}
-                postThumbnailDate={frontmatter.date}
+                postThumbnailDate={frontmatter.blog_date}
                 postThumbnailSlug={fields.slug}
                 postThumbnailAuthor={frontmatter.author}
                 postThumbnailTag={frontmatter.tag}
