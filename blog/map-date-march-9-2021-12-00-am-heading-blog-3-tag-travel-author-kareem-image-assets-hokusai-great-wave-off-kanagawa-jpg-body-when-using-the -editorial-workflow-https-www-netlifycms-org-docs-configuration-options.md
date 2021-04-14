@@ -1,6 +1,7 @@
 ---
 date: March 9, 2021 12:00 AM
 heading: Blog 3
+blog_date: 2021-04-13T00:00:00.000Z
 title: blog
 tag: travel
 author: kareem
