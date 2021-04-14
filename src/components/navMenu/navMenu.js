@@ -18,7 +18,7 @@ export default function navMenu() {
                             <Nav.Link className="navMenuItem"><Link to="/featured/">Podcasts</Link></Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link className="navMenuItem"><Link to="/">Coffee break</Link></Nav.Link>
+                            <Nav.Link className="navMenuItem"><Link to="/coffeeBreak/">Coffee break</Link></Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                         <Navbar.Brand><Link className="branding" to="/">Arbitrary Author</Link></Navbar.Brand>
