@@ -15,7 +15,7 @@ collections:
     folder: blog
     create: true
     fields:
-      - { name: "date", label: "Post Date", default: "", date_format: "MMMM DD YYYY", picker_utc: true, widget: 'datetime' }
+      - { name: "blog_date", label: "Post Date", default: "", date_format: "MMMM DD YYYY", picker_utc: true, widget: 'datetime' }
       - { name: "title", label: "Title", widget: "string" }
       - { name: "tag", label: "Tag", widget: "string" }
       - { name: "author", label: "Author", widget: "string" }
@@ -30,7 +30,7 @@ collections:
     fields:
       - { name: "podcast_date", label: "Podcast Date", default: "", date_format: "MMMM DD YYYY", picker_utc: false, widget: 'datetime' }
       - { name: "podcast_title", label: "Podcast Title", widget: "string" }
-      - { name: "podcast_description",label: "Podcast Description", widget: "text"}
+      - { name: "body",label: "Podcast Description", widget: "text"}
       - { name: "podcast_url", label: "Podcast URL",  widget: "text"}
       - { name: "podcast_image", label: "Podcast Image", widget: "image"}
     
@@ -42,7 +42,7 @@ collections:
     fields:
       - { name: "coffeeBreak_date", label: "Date", default: "", date_format: "MMMM DD YYYY", picker_utc: false, widget: 'datetime' }
       - { name: "coffeeBreak_title", label: "Title", widget: "string" }
-      - { name: "body",label: "Description", widget: "text"}
+      - { name: "body", label: "Description", widget: "text"}
       - { name: "coffeeBreak_image", label: "Coffee Break Image", widget: "image"}
       - { name: "coffeeBreak_audio", label: "Audio", widget: "file", default: ""}
         
