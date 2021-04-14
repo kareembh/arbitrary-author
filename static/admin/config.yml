@@ -37,7 +37,7 @@ collections:
   - name: coffeeBreak
     label: Coffee Break
     folder: coffeeBreak
-    identifier_field: "coffeeBreak_title"
+    identifier_field: "{{coffeeBreak_title}}"
     create: true
     fields:
       - { name: "coffeeBreak_date", label: "Date", default: "", date_format: "MMMM DD YYYY", picker_utc: false, widget: 'datetime' }
