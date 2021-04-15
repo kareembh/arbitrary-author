@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from "../components/layout/layout"
-import contactContent from "../../site/content/contact.md"
+import contactContent from "../../site/content/contact.json"
 
 
 export default function about() {
