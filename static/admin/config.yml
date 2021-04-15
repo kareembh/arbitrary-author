@@ -54,16 +54,19 @@ collections:
         file: "site/content/about.json"
         fields:
           - { name: "title", label: "Title", widget: "string"}
-          - { name: "body", label: "About Content", widget: "markdown"}
           - { name: "about_image", label: "About Image", widget: "image"}
+          - { name: "body", label: "About Content", widget: "markdown"}
+          
 
       - name: "contact"
         label: "Contact Page"
-        file: "site/content/contact.md"
+        file: "site/content/contact.json"
         fields:
           - { name: "title", label: "Title", widget: "string"}
-          - { name: "contact", label: "Contact Content", widget: "markdown"}
-          - { name: "about_image", label: "About Image", widget: "image"}
+          - { name: "email", label: "Email", widget: "text"}
+          - { name: "linkedin", label: "Linkedin", widget: "text"}
+          - { name: "instagram", label: "Instagram", widget: "text"}
+          - { name: "facebook", label: "Facebook", widget: "text"}
           
 
       
