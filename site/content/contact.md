@@ -1,0 +1,32 @@
+---
+title: Contact Page
+contact: >-
+  This is the place where the un-professional professionals have a place to
+  voice themselves. The outcasts, the land of misfit toys, the outliers, the
+  rule breakers. 
+
+
+  The Arbitrary Author came abouts as its name states; Arbitrarily. I was lost and without direction, this site is the only place where I feel like my voice is my voice. Where there is no limitations to language, vulgarity, ideologies and mindsets. 
+
+
+  Giving a voice back to the truly arbitrary un-professionals of the world. This is the community where you have a voice. In the forms of blogging, podcasting, and everything in-between to come. 
+
+
+  They say that you are supposed to take this “about page” seriously. But I feel like it’s all so serious. So if you have questions or concerns about the Arbitrary Author, please feel free to reach out whenever you may need with questions. Because this is the place where your voices will be heard.
+
+
+  This is my voice. This is the voice of the Arbitrary Author in all aspects of life. It won’t always be pretty flowers and rainbows. It will give you tools and tricks into the life of someone with ADHD and his thoughts, opinions, and manic thoughts throughout his day to day life. 
+
+
+  This brand is for no one person over another. This brand is for the strong of heart, the resilient, the one’s that never give up, the ones that need a break from everything that’s happening in the world.
+
+
+  The Arbitrary Author is for the small business owners that need help with marketing, branding, and growing but don’t have the money. 
+
+
+  This is for the lost but looking. 
+
+
+  See you space cowboys…
+about_image: /assets/hokusai-great-wave-off-kanagawa.jpg
+---
