@@ -12,9 +12,9 @@ const PodcastList = (props) => {
             node {
               id
               childMarkdownRemark {
+                excerpt(pruneLength: 270)
                 frontmatter {
                   podcast_date(formatString: "DD, MMMM, YYYY")
-                  podcast_description
                   podcast_image
                   podcast_title
                   podcast_url
@@ -32,13 +32,13 @@ const PodcastList = (props) => {
             {podcasts &&
                 podcasts.map((podcast) => {
                 // destructuring data object
-                const {frontmatter} = podcast.node.childMarkdownRemark;
+                const {frontmatter, excerpt} = podcast.node.childMarkdownRemark;
                 return (
                         <Podcasts
                             key={podcast.node.id}
                             podcastImage={frontmatter.podcast_image}
                             podcastTitle={frontmatter.podcast_title}
-                            podcastDescription={frontmatter.podcast_description}
+                            podcastDescription={excerpt}
                             podcastDate={frontmatter.podcast_date}
                             podcastUrl={frontmatter.podcast_url}
                         />

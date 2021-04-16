@@ -30,7 +30,7 @@ collections:
     fields:
       - { name: "podcast_date", label: "Podcast Date", default: "", date_format: "MMMM DD YYYY", picker_utc: false, widget: 'datetime' }
       - { name: "podcast_title", label: "Podcast Title", widget: "string" }
-      - { name: "body",label: "Podcast Description", widget: "markdown"}
+      - { name: "body", label: "Podcast Description", widget: "markdown"}
       - { name: "podcast_url", label: "Podcast URL",  widget: "text"}
       - { name: "podcast_image", label: "Podcast Image", widget: "image"}
     

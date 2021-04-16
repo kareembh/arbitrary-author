@@ -3,12 +3,7 @@ import Layout from "../components/layout/layout"
 import aboutContent from "../../site/content/about.json"
 import "./about.scss"
 
-
-
-
 export default function about() {
-
-    
 
     return (
         <Layout>
