@@ -64,9 +64,13 @@ collections:
         fields:
           - { name: "title", label: "Title", widget: "string"}
           - { name: "email", label: "Email", widget: "text"}
+          - { name: "email_icon", label: "Email Icon", widget: "image"}
           - { name: "linkedin", label: "Linkedin", widget: "text"}
+          - { name: "linkedin_icon", label: "Linkedin Icon", widget: "image"}
           - { name: "instagram", label: "Instagram", widget: "text"}
+          - { name: "instagram_icon", label: "Instagram Icon", widget: "image"}
           - { name: "facebook", label: "Facebook", widget: "text"}
+          - { name: "facebook_icon", label: "Facebook Icon", widget: "image"}
           
 
       
