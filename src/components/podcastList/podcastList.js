@@ -1,6 +1,6 @@
 import React from 'react'
 import { useStaticQuery, graphql } from "gatsby"
-import {Row, Col} from 'react-bootstrap';
+import {Row} from 'react-bootstrap';
 import Podcasts from '../podcasts/podcasts'
 
 const PodcastList = (props) => {
