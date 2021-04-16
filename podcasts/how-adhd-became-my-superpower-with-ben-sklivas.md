@@ -8,3 +8,4 @@ podcast_description: In this episode, Christine and Kelsey talk with Ben
 podcast_url: https://open.spotify.com/episode/1CSzvUBEdp9SMboVDqjS8y
 podcast_image: /assets/11302318-1615492355239-77db08a7fc99d.jpg
 ---
+In this episode, Christine and Kelsey talk with Ben Sklivas, a business development and marketing professional about his journey and growth in his life and career. He touches on what weaknesses he had, along with his ADHD and how he was able to use that to his advantage. Listen for some personal development tips that you can implement into your life!
