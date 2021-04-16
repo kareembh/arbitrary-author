@@ -19,6 +19,12 @@
     line-height: 26px;
     margin-left: 9px;
   }
+
+  .navbar-brand{
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+  }
+
   .branding:hover{
       text-decoration: none;
   }
