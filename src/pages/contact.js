@@ -8,7 +8,7 @@ export default function about() {
     return (
         <Layout>
             <h1>{contactContent.title}</h1>
-            <a href={contactContent.email}><img src={}/></a>
+            <a href={contactContent.email}></a>
             <a href={contactContent.linkedin}>Linkedin</a>
             <a href={contactContent.instagram}>Instagram</a>
             <a href={contactContent.facebook}>Facebook</a>
