@@ -8,10 +8,10 @@ export default function about() {
     return (
         <Layout>
             <h1>{contactContent.title}</h1>
-            <a href={contactContent.email}></a>
-            <a href={contactContent.linkedin}>Linkedin</a>
-            <a href={contactContent.instagram}>Instagram</a>
-            <a href={contactContent.facebook}>Facebook</a>
+            <a href={"mailto:" + contactContent.email}><img src={contactContent.email_icon} alt="" /></a>
+            <a href={contactContent.linkedin}><img src={contactContent.linkedin_icon} alt="" /></a>
+            <a href={contactContent.instagram}><img src={contactContent.instagram_icon} alt="" /></a>
+            <a href={contactContent.facebook}><img src={contactContent.facebook_icon} alt="" /></a>
         </Layout>
     )
 }
