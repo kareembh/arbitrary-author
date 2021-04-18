@@ -12,25 +12,25 @@ export default function navMenu() {
                         activeKey="/home"   
                     >
                         <Nav.Item>
-                            <Nav.Link className="navMenuItem"><Link to="/about/">About</Link></Nav.Link>
+                            <Link className="navMenuItem" to="/about/">About</Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link className="navMenuItem"><Link to="/featured/">Podcasts</Link></Nav.Link>
+                           <Link className="navMenuItem" to="/featured/">Podcasts</Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link className="navMenuItem"><Link to="/coffeeBreak/">Coffee break</Link></Nav.Link>
+                            <Link className="navMenuItem" to="/coffeeBreak/">Coffee break</Link>
                         </Nav.Item>
                         <Nav.Item>
                         <Navbar.Brand><Link className="branding" to="/">Arbitrary Author</Link></Navbar.Brand>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link className="navMenuItem" href="https://www.boost.am">Services</Nav.Link>
+                            <a className="navMenuItem" href="https://www.boost.am" target="_blank">Serices</a>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link className="navMenuItem" href="https://calendly.com/bsklivas/">Book a call</Nav.Link>
+                            <a className="navMenuItem" href="https://calendly.com/bsklivas/" target="_blank">Book a call</a>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link className="navMenuItem"><Link to="/contact/">Contact</Link></Nav.Link>
+                            <Link className="navMenuItem" to="/contact/">Contact</Link>
                         </Nav.Item>
                     </Nav>
                 </Navbar.Collapse>
