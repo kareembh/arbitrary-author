@@ -5,7 +5,6 @@ import './coffeeBreakThumbnail.scss'
 
 
 const CoffeeBreakThumbnail = (props) =>{
-    console.log(props.coffeeBreakAudio)
     return (
         <div className="coffeeBreak">
             <img src={props.coffeeBreakThumbnailImage} className="coffeeBreakThumbnailImage" alt="" />
@@ -14,7 +13,7 @@ const CoffeeBreakThumbnail = (props) =>{
                 {/* <p className="coffeeBreakThumbnailBody">{props.coffeeBreakThumbnailDescription}</p> */}
                 <p className="coffeeBreakThumbnailDate">{props.coffeeBreakThumbnailDate}</p>
                 <AudioPlayer
-                    autoPlay
+                    
                     src={props.coffeeBreakAudio}
                     onPlay={e => console.log("onPlay")}
                     // other props here
