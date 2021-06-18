@@ -14,6 +14,7 @@ const CoffeeBreak = (props) => {
           node {
             id
             childMarkdownRemark {
+              excerpt
               frontmatter {
                 coffeeBreak_audio
                 coffeeBreak_date(formatString: "MMMM DD YYYY")
@@ -44,9 +45,9 @@ const CoffeeBreak = (props) => {
                           postThumbnailStyles="postThumbnailStyles"
                           coffeeBreakThumbnailImage={frontmatter.coffeeBreak_image}
                           coffeeBreakThumbnailHeader={frontmatter.title}
-                          // coffeeBreakThumbnailDescription={excerpt}
+                          coffeeBreakThumbnailDescription={coffeeBreakPost.node.childMarkdownRemark.excerpt}
                           coffeeBreakThumbnailDate={frontmatter.coffeeBreak_date}
-                          coffeeBreakAudio={frontmatter.coffeeBreak_audio}
+                          // coffeeBreakAudio={frontmatter.coffeeBreak_audio}
                       />
                     </Col>
                 );
