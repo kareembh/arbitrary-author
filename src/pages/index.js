@@ -10,7 +10,7 @@ const IndexPage = (props) => {
 
   const data = useStaticQuery(graphql`
     {
-      allFile(filter: {sourceInstanceName: {eq: "blog"}}) {
+      allFile(filter: {sourceInstanceName: {eq: "blog"}}, sort: {fields: childrenMarkdownRemark___frontmatter___blog_date, order: DESC}) {
         edges {
           node {
             id

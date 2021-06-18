@@ -40,18 +40,18 @@ const CoffeeBreak = (props) => {
                 return (
                     // returning posts components with destructured data
                     <Col lg={4} md={4} sm={12} key={coffeeBreakPost.node.id}>
-                    <CoffeeBreakThumbnail
-                        postThumbnailStyles="postThumbnailStyles"
-                        coffeeBreakThumbnailImage={frontmatter.coffeeBreak_image}
-                        coffeeBreakThumbnailHeader={frontmatter.title}
-                        // coffeeBreakThumbnailDescription={excerpt}
-                        coffeeBreakThumbnailDate={frontmatter.coffeeBreak_date}
-                        coffeeBreakAudio={frontmatter.coffeeBreak_audio}
-                    />
+                      <CoffeeBreakThumbnail
+                          postThumbnailStyles="postThumbnailStyles"
+                          coffeeBreakThumbnailImage={frontmatter.coffeeBreak_image}
+                          coffeeBreakThumbnailHeader={frontmatter.title}
+                          // coffeeBreakThumbnailDescription={excerpt}
+                          coffeeBreakThumbnailDate={frontmatter.coffeeBreak_date}
+                          coffeeBreakAudio={frontmatter.coffeeBreak_audio}
+                      />
                     </Col>
                 );
                 })}
-        </Row>
+            </Row>
         </Layout>
     )
 }

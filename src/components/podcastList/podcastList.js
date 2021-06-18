@@ -7,7 +7,7 @@ const PodcastList = (props) => {
 
     const data = useStaticQuery(graphql`
     {
-        allFile(filter: {sourceInstanceName: {eq: "podcasts"}}) {
+        allFile(filter: {sourceInstanceName: {eq: "podcasts"}}, sort: {fields: childrenMarkdownRemark___frontmatter___podcast_date, order: DESC}) {
           edges {
             node {
               id
