@@ -1,5 +1,7 @@
 import React from 'react'
-import AudioPlayer from 'react-h5-audio-player';
+// import AudioPlayer from 'react-h5-audio-player';
+import { Button } from 'react-bootstrap';
+import { Link } from "gatsby"
 import 'react-h5-audio-player/src/styles.scss'
 import './coffeeBreakThumbnail.scss'
 
@@ -12,13 +14,14 @@ const CoffeeBreakThumbnail = (props) =>{
                 <h3 className="coffeeBreakThumbnailHeader">{props.coffeeBreakThumbnailHeader}</h3>
                 <p className="coffeeBreakThumbnailBody">{props.coffeeBreakThumbnailDescription}</p>
                 <p className="coffeeBreakThumbnailDate">{props.coffeeBreakThumbnailDate}</p>
+                <p className="coffeeBreakTags">{props.coffeeBreakThumbnailTag}</p>
                 {/* <AudioPlayer
                     
                     src={props.coffeeBreakAudio}
                     onPlay={e => console.log("onPlay")}
                     // other props here
                 /> */}
-                {/* <Link to={props.postThumbnailSlug}><Button className="postThumbnailButton">Continue reading</Button></Link> */}
+                <Link to={props.postThumbnailSlug}><Button className="coffeeBreakThumbnailButton">Continue reading</Button></Link>
             </div>
         </div>
     )
