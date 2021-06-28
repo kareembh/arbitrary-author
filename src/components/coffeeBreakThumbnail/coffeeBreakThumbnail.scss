@@ -1,9 +1,75 @@
+//coffeeBreak thumbnail styles
 .coffeeBreak{
-    width: 300px;
-    border: 2px solid red;
-    height: 400px;
-}
+    max-width: 270px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    box-shadow: 1px 2px 6px 1px #ccc;
 
-.coffeeBreakThumbnailImage{
-    width: 100% !important;
+    .coffeeBreakThumbnailBody{
+        padding: 0 20px;
+        font-size: 14px;
+        color: #666666;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 24px;
+        font-family: Mulish;
+    }
+    
+    .coffeeBreakThumbnailImage{
+        // max-width: -webkit-fill-available;
+        width: 270px;
+        height: 185px;
+        padding-bottom: 25px;
+    }
+    
+    .coffeeBreakThumbnailButton{
+        width: 230px;
+        height: 45px;
+        margin: 0 20px;
+        background-color: #171717;
+        border: #171717;
+        color: #ffffff;
+        font-family: Mulish;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .coffeeBreakThumbnailButton:hover{
+        background-color: #ffffff;
+        border: #171717 1px solid;
+        color: #171717;
+    }
+    
+    .coffeeBreakThumbnailHeader{
+        padding-left: 20px;
+        font-family: Mulish;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        color: #171717;
+    }
+    
+    .coffeeBreakThumbnailDate{
+        padding-left: 20px;
+        font-family: Mulish;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 24px;
+        color: #666666;
+    }
+    
+    .coffeeBreakTags{
+        padding-left: 20px;
+        font-family: Mulish;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 26px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: #171717;
+    }
 }
