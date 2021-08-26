@@ -2,7 +2,6 @@ import * as React from "react"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import PostThumbnail from "../components/postThumbnail/postThumbnail"
 import Layout from "../components/layout/layout"
-import {Row, Col } from 'react-bootstrap';
 import { useStaticQuery, graphql } from "gatsby"
 
 // markup
@@ -39,8 +38,8 @@ const IndexPage = (props) => {
   
   return (
       <Layout>
-        <Row>
-          <Col lg={12} md={12} sm={12}>
+        <div>
+          <div lg={12} md={12} sm={12}>
             <PostThumbnail
               postThumbnailStyles="featuredPost"
               postThumbnailImage={posts[0].node.childMarkdownRemark.frontmatter.image}
@@ -51,16 +50,16 @@ const IndexPage = (props) => {
               postThumbnailAuthor={posts[0].node.childMarkdownRemark.frontmatter.author}
               postThumbnailTag={posts[0].node.childMarkdownRemark.frontmatter.tag}
             />
-          </Col>
-        </Row>
-        <Row>    
+          </div>
+        </div>
+        <div>    
         {posts &&
         posts.slice(1).map((post) => {
           // destructuring data object
           const { frontmatter, fields, excerpt} = post.node.childMarkdownRemark;
           return (
             // returning posts components with destructured data
-            <Col lg={4} md={4} sm={12} key={post.node.id}>
+            <div lg={4} md={4} sm={12} key={post.node.id}>
               <PostThumbnail
                 postThumbnailStyles="postThumbnailStyles"
                 postThumbnailImage={frontmatter.image}
@@ -71,10 +70,10 @@ const IndexPage = (props) => {
                 postThumbnailAuthor={frontmatter.author}
                 postThumbnailTag={frontmatter.tag}
               />
-            </Col>
+            </div>
           );
         })}
-        </Row>
+        </div>
       </Layout>
     
   )

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Row } from 'react-bootstrap';
 
 const footerStyle = {
     backgroundColor: "#000000",
@@ -17,8 +16,8 @@ const footerText = {
 
 export default function footer() {
     return (
-        <Row style={footerStyle}>
+        <div style={footerStyle}>
             <p style={footerText}>@2021 Arbitrary Author. All Rights Reserved.</p>
-        </Row>
+        </div>
     )
 }

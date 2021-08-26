@@ -1,6 +1,5 @@
 import React from 'react'
 import { useStaticQuery, graphql } from "gatsby"
-import {Row} from 'react-bootstrap';
 import Podcasts from '../podcasts/podcasts'
 
 const PodcastList = (props) => {
@@ -28,7 +27,7 @@ const PodcastList = (props) => {
 
     const podcasts = data.allFile.edges;
     return (
-            <Row>
+            <div>
             {podcasts &&
                 podcasts.map((podcast) => {
                 // destructuring data object
@@ -44,7 +43,7 @@ const PodcastList = (props) => {
                         />
                 );
                 })}
-            </Row>
+            </div>
     )
 }
 export default PodcastList;
