@@ -1,6 +1,5 @@
 import React from 'react'
 // import AudioPlayer from 'react-h5-audio-player';
-import { Button } from 'react-bootstrap';
 import { Link } from "gatsby"
 import 'react-h5-audio-player/src/styles.scss'
 import './coffeeBreakThumbnail.scss'
@@ -21,7 +20,7 @@ const CoffeeBreakThumbnail = (props) =>{
                     onPlay={e => console.log("onPlay")}
                     // other props here
                 /> */}
-                <Link to={props.postThumbnailSlug}><Button className="coffeeBreakThumbnailButton">Continue reading</Button></Link>
+                <Link to={props.postThumbnailSlug}><div className="coffeeBreakThumbnailButton">Continue reading</div></Link>
             </div>
         </div>
     )
