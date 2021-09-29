@@ -1,36 +1,28 @@
 import React from "react";
 import { Link } from "gatsby";
+// import {Navbar, Nav, NavDropdown, Container} from 'react-bootstrap/Navbar'
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav'
+import Container from 'react-bootstrap/Container'
 import "./navMenu.scss";
 
 export default function navMenu() {
   return (
-    <div>
-      <Link className="navMenuItem" to="/about/">
-        About
-      </Link>
-
-      <Link className="navMenuItem" to="/featured/">
-        Podcasts
-      </Link>
-      <Link className="navMenuItem" to="/coffeeBreak/">
-        Coffee break
-      </Link>
-      <Link className="branding" to="/">
-        Arbitrary Author
-      </Link>
-      <a className="navMenuItem" href="https://www.boost.am" target="_blank">
-        Serices
-      </a>
-      <a
-        className="navMenuItem"
-        href="https://calendly.com/bsklivas/"
-        target="_blank"
-      >
-        Book a call
-      </a>
-      <Link className="navMenuItem" to="/contact/">
-        Contact
-      </Link>
-    </div>
+    <Navbar bg="light" expand="lg">
+      <Container>
+      <Navbar.Brand href="#home">Arbatrary Author</Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="me-auto">
+            <Nav.Link><Link className="navMenuItem" to="/about/">About</Link></Nav.Link>
+            <Nav.Link><Link className="navMenuItem" to="/featured/">Podcasts</Link></Nav.Link>
+            <Nav.Link><Link className="navMenuItem" to="/coffeeBreak/">Coffee break</Link></Nav.Link>
+            <Nav.Link href="https://www.boost.am/">Services</Nav.Link>
+            <Nav.Link href="https://calendly.com/bsklivas/">Book a call</Nav.Link>
+            <Nav.Link><Link className="navMenuItem" to="/contact/">Contact</Link></Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
