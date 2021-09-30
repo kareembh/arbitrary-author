@@ -50,12 +50,6 @@ const IndexPage = (props) => {
   `)
   //assigning an array of data objects to the posts variable
   const posts = data.allFile.edges;
-  let screenSize = window.innerWidth;
-  let skip = 1;
-  console.log(screenSize);
-  if(screenSize < 768) {
-    skip = 0;
-  }
   return (
       <Layout>
         <OnAtLeastTablet>
