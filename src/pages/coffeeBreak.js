@@ -1,6 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from "gatsby"
 import Layout from '../components/layout/layout'
+import {Row, Col } from 'react-bootstrap';
 import CoffeeBreakThumbnail from '../components/coffeeBreakThumbnail/coffeeBreakThumbnail'
 
 
@@ -33,14 +34,14 @@ const CoffeeBreak = (props) => {
     console.log(coffeeBreakPosts);
     return (
         <Layout>
-            <div>    
+            <Row>    
                 {coffeeBreakPosts &&
                 coffeeBreakPosts.map((coffeeBreakPost) => {
                 // destructuring data object
                 const { frontmatter} = coffeeBreakPost.node.childMarkdownRemark;
                 return (
                     // returning posts components with destructured data
-                    <div lg={4} md={4} sm={12} key={coffeeBreakPost.node.id}>
+                    <Col lg={4} md={4} sm={12} key={coffeeBreakPost.node.id}>
                       <CoffeeBreakThumbnail
                           postThumbnailStyles="postThumbnailStyles"
                           coffeeBreakThumbnailImage={frontmatter.coffeeBreak_image}
@@ -50,10 +51,10 @@ const CoffeeBreak = (props) => {
                           coffeeBreakThumbnailTag={frontmatter.tag}
                           // coffeeBreakAudio={frontmatter.coffeeBreak_audio}
                       />
-                    </div>
+                    </Col>
                 );
                 })}
-            </div>
+            </Row>
         </Layout>
     )
 }

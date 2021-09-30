@@ -9,7 +9,7 @@ export default function navMenu() {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
-      <Navbar.Brand><Link to="/">Arbatrary Author</Link></Navbar.Brand>
+      <Navbar.Brand><Link className="navbar-brand" to="/">Arbatrary Author</Link></Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">

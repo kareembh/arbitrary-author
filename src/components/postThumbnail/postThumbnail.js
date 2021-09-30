@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from "gatsby"
+import { Button } from 'react-bootstrap';
 import "./postThumbnail.scss"
 
 
@@ -13,7 +14,7 @@ export default function postThumbnail(props) {
                 <h3 className="postThumbnailHeader">{props.postThumbnailTitle}</h3>
                 <p className="postThumbnailBody">{props.postThumbnailDescription}</p>
                 <p className="postThumbnailDate">Posted by <b>{props.postThumbnailAuthor}</b> on {props.postThumbnailDate}</p>
-                <Link to={props.postThumbnailSlug}><a className="postThumbnailButton">Continue reading</a></Link>
+                <Link to={props.postThumbnailSlug}><Button className="postThumbnailButton">Continue reading</Button></Link>
             </div>
         </div>
     )
