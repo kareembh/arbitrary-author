@@ -1,14 +1,14 @@
 import React from 'react'
 import NavMenu from '../navMenu/navMenu'
 import Footer from '../footer/footer'
-
+import Container from 'react-bootstrap/Container'
 export default function layout({ children }) {
     return (
         <div>
             <NavMenu></NavMenu>
-            <div>
+            <Container>
             {children}
-            </div>
+            </Container>
             <Footer></Footer>
         </div>
     )
