@@ -35,12 +35,16 @@ const IndexPage = (props) => {
   `)
   //assigning an array of data objects to the posts variable
   const posts = data.allFile.edges;
-  
+  let screenSize = window.innerWidth;
+  let skip = 1;
+  console.log(screenSize);
+  if(screenSize < 768) {
+    skip = 0;
+  }
   return (
       <Layout>
-        <div>
-          <div lg={12} md={12} sm={12}>
             <PostThumbnail
+              lg={12} md={12} sm={12}
               postThumbnailStyles="featuredPost"
               postThumbnailImage={posts[0].node.childMarkdownRemark.frontmatter.image}
               postThumbnailTitle={posts[0].node.childMarkdownRemark.frontmatter.title}
@@ -50,17 +54,16 @@ const IndexPage = (props) => {
               postThumbnailAuthor={posts[0].node.childMarkdownRemark.frontmatter.author}
               postThumbnailTag={posts[0].node.childMarkdownRemark.frontmatter.tag}
             />
-          </div>
-        </div>
         <div>    
         {posts &&
-        posts.slice(1).map((post) => {
+        posts.slice(skip).map((post) => {
           // destructuring data object
           const { frontmatter, fields, excerpt} = post.node.childMarkdownRemark;
           return (
             // returning posts components with destructured data
-            <div lg={4} md={4} sm={12} key={post.node.id}>
               <PostThumbnail
+                lg={4} md={4} sm={12}
+                key={post.node.id}
                 postThumbnailStyles="postThumbnailStyles"
                 postThumbnailImage={frontmatter.image}
                 postThumbnailTitle={frontmatter.title}
@@ -70,7 +73,6 @@ const IndexPage = (props) => {
                 postThumbnailAuthor={frontmatter.author}
                 postThumbnailTag={frontmatter.tag}
               />
-            </div>
           );
         })}
         </div>
