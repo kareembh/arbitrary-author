@@ -70,7 +70,7 @@ const IndexPage = (props) => {
             </Row> 
         <Row>   
         {posts &&
-        posts.slice(skip).map((post) => {
+        posts.slice(1).map((post) => {
           // destructuring data object
           const { frontmatter, fields, excerpt} = post.node.childMarkdownRemark;
           return (
