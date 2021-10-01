@@ -1,9 +1,9 @@
 //Post thumbnail styles
 .postThumbnailStyles{
-    max-width: 270px;
     padding-bottom: 20px;
     margin-bottom: 30px;
     box-shadow: 1px 2px 6px 1px #ccc;
+    width: min-content;
 
     .postThumbnailBody{
         padding: 0 20px;
@@ -81,13 +81,10 @@
      box-shadow: 1px 2px 6px 1px #ccc;
      
     .featuredPostContent{
-        max-width: 270px;
-        height: 550px;
-        padding-bottom: 80px;
+        width: 25%;
+        height: 100%;
         padding-top: 80px;
-        margin-bottom: 30px;
         display: inline-block;
-        vertical-align: top;
     }
 
     .postThumbnailBody{
@@ -101,8 +98,8 @@
     }
     
     .postThumbnailImage{
-        width:840px;
-        height: 550px;
+        width: 75%;
+        height: 100%;
         display: inline-block;
         vertical-align: top;
     }
