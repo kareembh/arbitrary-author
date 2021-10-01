@@ -1,11 +1,11 @@
 import * as React from "react"
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.scss'
 import PostThumbnail from "../components/postThumbnail/postThumbnail"
 import Layout from "../components/layout/layout"
 import {Row, Col } from 'react-bootstrap';
 import { useStaticQuery, graphql } from "gatsby"
 
-// markup
 const IndexPage = (props) => {
 
   const data = useStaticQuery(graphql`
@@ -38,10 +38,9 @@ const IndexPage = (props) => {
   const posts = data.allFile.edges;
   return (
       <Layout>
-          <Row>
+          <Row className="hide-mobile">
             <Col lg={12} md={12} sm={12}>
                 <PostThumbnail
-                  lg={12} md={12} sm={12}
                   postThumbnailStyles="featuredPost"
                   postThumbnailImage={posts[0].node.childMarkdownRemark.frontmatter.image}
                   postThumbnailTitle={posts[0].node.childMarkdownRemark.frontmatter.title}
@@ -60,7 +59,7 @@ const IndexPage = (props) => {
           const { frontmatter, fields, excerpt} = post.node.childMarkdownRemark;
           return (
             // returning posts components with destructured data
-            <Col lg={4} md={4} sm={12} key={post.node.id}>
+            <Col lg={4} md={6} sm={12} key={post.node.id}>
               <PostThumbnail
                 postThumbnailStyles="postThumbnailStyles"
                 postThumbnailImage={frontmatter.image}

@@ -1,0 +1,32 @@
+.hide-mobile {
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
+  
+  .hide-desktop {
+    @media not all and (max-width: 480px) {
+      display: none;
+    }
+  }
+
+  //mobile
+  @media screen and (max-width: 480px) {
+    .postThumbnailStyles{
+        margin: auto;
+    }
+  }
+
+  //tablet
+  @media screen and (max-width: 768px) {
+    .postThumbnailStyles{
+        margin: auto;
+    }
+  }
+
+  //desktop
+  @media screen and (max-width: 1200px) {
+    .postThumbnailStyles{
+        margin: auto;
+    }
+  }
