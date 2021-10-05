@@ -36,13 +36,13 @@ const IndexPage = (props) => {
   `)
   //assigning an array of data objects to the posts variable
   const posts = data.allFile.edges;
-    let skip = 1;
-  var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-if (viewportWidth > 1199) {
-	skip = 1;
-} else {
-	skip = 0;
-}
+//     let skip = 1;
+//   var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+// if (viewportWidth > 1199) {
+// 	skip = 1;
+// } else {
+// 	skip = 0;
+// }
 
   return (
       <Layout>
@@ -62,7 +62,7 @@ if (viewportWidth > 1199) {
             </Row> 
         <Row>   
         {posts &&
-        posts.slice(skip).map((post) => {
+        posts.slice(1).map((post) => {
           // destructuring data object
           const { frontmatter, fields, excerpt} = post.node.childMarkdownRemark;
           return (
