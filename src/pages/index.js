@@ -36,6 +36,14 @@ const IndexPage = (props) => {
   `)
   //assigning an array of data objects to the posts variable
   const posts = data.allFile.edges;
+    let skip = 1;
+  var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+if (viewportWidth > 1199) {
+	skip = 1;
+} else {
+	skip = 0;
+}
+
   return (
       <Layout>
           <Row className="hide-mobile">
@@ -54,7 +62,7 @@ const IndexPage = (props) => {
             </Row> 
         <Row>   
         {posts &&
-        posts.slice(1).map((post) => {
+        posts.slice(skip).map((post) => {
           // destructuring data object
           const { frontmatter, fields, excerpt} = post.node.childMarkdownRemark;
           return (
