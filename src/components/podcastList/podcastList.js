@@ -1,7 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from "gatsby"
 import Podcasts from '../podcasts/podcasts'
-import {Row} from 'react-bootstrap';
+import {Row, Col} from 'react-bootstrap';
 
 const PodcastList = (props) => {
 
@@ -12,7 +12,7 @@ const PodcastList = (props) => {
             node {
               id
               childMarkdownRemark {
-                excerpt(pruneLength: 270)
+                excerpt(pruneLength: 240)
                 frontmatter {
                   podcast_date(formatString: "DD, MMMM, YYYY")
                   podcast_image
@@ -34,6 +34,7 @@ const PodcastList = (props) => {
                 // destructuring data object
                 const {frontmatter, excerpt} = podcast.node.childMarkdownRemark;
                 return (
+                  <Col lg={4} md={6} sm={12} >
                         <Podcasts
                             key={podcast.node.id}
                             podcastImage={frontmatter.podcast_image}
@@ -42,6 +43,7 @@ const PodcastList = (props) => {
                             podcastDate={frontmatter.podcast_date}
                             podcastUrl={frontmatter.podcast_url}
                         />
+                  </Col>
                 );
                 })}
             </Row>
