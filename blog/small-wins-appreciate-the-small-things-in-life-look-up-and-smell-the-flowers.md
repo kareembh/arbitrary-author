@@ -1,7 +1,7 @@
 ---
 blog_date: 2021-05-04T00:00:00.000Z
 title: Small Wins; Appreciate the small things in life. Look up and smell the flowers.
-tag: Personal Wins
+tag: Gratitude
 author: The Arbitrary Author
 image: /assets/montreal-skyline-winter.jpg
 ---
