@@ -3,7 +3,7 @@ date: March 15, 2021 4:00 AM
 blog_date: 2021-04-14T00:00:00.000Z
 title: The Arbitrary Author
 heading: blog1
-tag: Story Telling
+tag: story Telling
 author: Arbitrary Author
 image: /assets/taikan-yokoyama-mount-penglai.jpg
 ---
