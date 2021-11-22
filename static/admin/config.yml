@@ -46,6 +46,7 @@ collections:
       - { name: "coffeeBreak_image", label: "Coffee Break Image", widget: "image"}
       - { name: "coffeeBreak_audio", label: "Audio", widget: "file", default: ""}
       - { name: "tag", label: "Tag", widget: "string" }
+      - { name: "coffeeBreak_url", label: "Coffee Break URL", widget: "string" }
 
   - name: "pages"
     label: "Pages"
