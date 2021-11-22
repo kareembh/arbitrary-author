@@ -21,7 +21,7 @@ const CoffeeBreakThumbnail = (props) =>{
                     onPlay={e => console.log("onPlay")}
                     // other props here
                 /> */}
-                <Link to={props.postThumbnailSlug}><Button className="coffeeBreakThumbnailButton">Continue reading</Button></Link>
+                <Link to={props.coffeeBreakThumbnailUrl}><Button className="coffeeBreakThumbnailButton">Continue reading</Button></Link>
             </div>
         </div>
     )
