@@ -4,6 +4,7 @@ coffeeBreak_title: "Coffee Break #1"
 coffeeBreak_image: /assets/hokusai-great-wave-off-kanagawa.jpg
 coffeeBreak_audio: /assets/audio-only-amine.mp4
 tag: series one
+coffeeBreak_url: https://www.youtube.com/watch?v=OwSl2xwl2-w
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu porttitor mi. Praesent eget pellentesque augue. Nulla tincidunt nibh odio, non placerat metus auctor non. Quisque bibendum consectetur mi nec auctor. Quisque bibendum nunc id consequat porta. Nullam tincidunt tellus sit amet ante sagittis, et luctus libero luctus. Proin cursus justo leo, a tincidunt massa porta quis.
 
