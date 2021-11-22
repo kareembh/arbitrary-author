@@ -5,7 +5,7 @@ import "./blogPost.scss"
 
 
 export default function BlogPost({ data }) {
-  const post = data.markdownRemark
+  const post = data.markdownRemark;
   return (
     <Layout>
       <div className="blogPostStyle">
