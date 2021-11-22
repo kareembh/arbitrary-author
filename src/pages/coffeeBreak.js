@@ -20,6 +20,7 @@ const CoffeeBreak = (props) => {
                 coffeeBreak_date(formatString: "MMMM DD YYYY")
                 coffeeBreak_image
                 coffeeBreak_title
+                coffeeBreak_url
                 tag
               }
               id
@@ -49,6 +50,7 @@ const CoffeeBreak = (props) => {
                           coffeeBreakThumbnailDescription={coffeeBreakPost.node.childMarkdownRemark.excerpt}
                           coffeeBreakThumbnailDate={frontmatter.coffeeBreak_date}
                           coffeeBreakThumbnailTag={frontmatter.tag}
+                          coffeeBreakThumbnailUrl={frontmatter.coffeeBreak_url}
                           // coffeeBreakAudio={frontmatter.coffeeBreak_audio}
                       />
                     </Col>
