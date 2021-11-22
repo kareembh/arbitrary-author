@@ -5,13 +5,13 @@ tag: Motivation
 author: The Arbitrary Author
 image: /assets/benjamin-sklivas-serving-cv.png
 ---
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <o:OfficeDocumentSettings>
   <o:AllowPNG/>
  </o:OfficeDocumentSettings>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <w:WordDocument>
   <w:View>Normal</w:View>
   <w:Zoom>0</w:Zoom>
@@ -50,9 +50,9 @@ image: /assets/benjamin-sklivas-serving-cv.png
    <m:intLim m:val="subSup"/>
    <m:naryLim m:val="undOvr"/>
   </m:mathPr></w:WordDocument>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
   DefSemiHidden="false" DefQFormat="false" DefPriority="99"
   LatentStyleCount="376">
@@ -631,9 +631,9 @@ image: /assets/benjamin-sklivas-serving-cv.png
   <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
    Name="Smart Link"/>
  </w:LatentStyles>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 10]>
+<!--\\[if gte mso 10]>
 <style>
  /* Style Definitions */
  table.MsoNormalTable
@@ -655,121 +655,67 @@ image: /assets/benjamin-sklivas-serving-cv.png
 	mso-bidi-font-family:"Times New Roman";
 	mso-bidi-theme-font:minor-bidi;}
 </style>
-<!\[endif]-->
+<!\\[endif]-->
 
 <!--StartFragment-->
 
 What's up, Cowboys,
 
- 
-
 This week's post will be something that I have been struggling with for the past couple of weeks.
-
- 
 
 As many of you know, I have ADHD, which might be a reason why you've been tuning in every week. I, like many, want to understand it in its various states, which differ from person to person, but more so than anything, **it is a difference that unites us.**
 
- 
-
 They say that ADHD is a spectrum so that you can be anywhere from 0-10 ADHD, which in my mind is a little backwards.
-
- 
 
 What you are seeing is a way that they want to explain ADHD. The medical "they." As I see it, it isn't 0-10, but more so, what of the seven attributes of the spectrum are you ranked highest.  Ps. In case you didn't know, these are the results that I got myself. Let me know what you got!
 
- 
 
-**(INSERT PICTURE HERE KAREEM)**
 
- 
+![](/assets/benjamin-sklivas-serving-cv.png)
 
  And, What perfect time to introduce this week's topic: **Finding Motivation.**
 
- 
-
 For those of you reading and ARE neurodivergent, please understand that **you are not alone in this.**
-
- 
 
 Let me give you an example from my life about finding motivation, specifically within the last week. To showcase that **this happens regularly.**
 
- 
-
 **STORYTIME:**
-
- 
 
 Last week, I had to work on emails regarding campaigns for the company I work with, **BOOST.** (The Marketing Firm I work with) We are working with not-for-profit drug and rehab clinics within the United States.
 
- 
-
 I was supposed to be putting together, tracking, and accessing the success rate of our new automation tool. 
-
- 
 
 This past week I had a list of things that I had to do that **HAD** to get done. Guess what didn't get done?
 
- 
-
 **YOU GUESSED IT!** All of the listed items and the things that I wrote down, all the things I prepared. Like that time, you were left behind in a dust cloud from burnouts by some Ferrari next to you.
-
- 
 
 I tell myself that I was taking the time I needed to prepare for the week. But in fact, I just had **ZERO motivation** to do anything other than writing maybe one blog post and play video games with my friends for hours on end.  
 
- 
-
 Does that sound like you? If so, let me know what you did to get over that. Because at times, it feels like you know that you're doing something wrong, but at the same time, you try hard to get your ass out of bed and off the computer to do some work, but gravity seems to be fighting even harder to keep you down. 
-
- 
 
 "I tried so hard and got so far, but in the end, it doesn't even matter, I had to fall To lose it all, but in the end, it doesn't even matter." RIP Chester Bennington.
 
- 
-
 If you do find yourself spiralling out of control like you're falling into the dark ocean ibis, you've come to the right place.
-
- 
 
 Do what my father always told me…**Take it one step at a time, even one second at a time if need**. Once you break things down into smaller chunks or tasks, it all looks so much easier.
 
- 
-
 For example, you need to write a colossal thesis paper by the end of the week? Are you in bed burying your head in your pillow with a box of Oreo's, trying to avoid that paper like the plague?
-
- 
 
 **BREAK IT DOWN INTO SMALLER STEPS!!**
 
- 
-
 What this post is made to do is to create a conscious effort into us having those "**off days**," or for me, it was more like an **"off week."**
-
- 
 
 Suppose we are going to be completely honest. I get a lot of help externally. It may come in the form of an Instagram post by @adhd_couple or even by @the_mini_adhd_coach (Don't worry, guys, I will link at the end of the post for you guys to check them out). I also use my friends and family as accountabilabuddys. A term coined by Lou from the most AMAZING Facebook group called "The ADHD Gift."
 
- 
-
 These are the ways that I get through my unmotivated weeks. Not every week can be the most motivating. Honestly, I tell myself that the neurodivergent mind sometimes needs a break. I mean, everyone can use a break from time to time. We are creative and unique. No wonder sometimes we need a little downtime. A little nap, maybe?
-
- 
 
 So if you're like me and this happens to you, let's say one week out of 4. LET ME KNOW. You are not alone.
 
- 
-
 Now, if you are or if anyone that you know is having issues with keeping their motivation. Hell, if anyone is having problems with having reasons to be in the first place. Let me know; I think that this is something that we don't speak about enough. We can all use a little motivational talk between peers. It's an issue that the neurodivergent and people who are not neurodivergent have problems with as well.
-
- 
 
 So reach out, help a friend out, do what YOU need to do to help and find the motivation it takes to get out of bed and kill the day.
 
- 
-
 Carpe Diem Bitches let's get after it!
-
- 
 
 See you, I'll SEE YOU, SPACE COWBOYS….
 
