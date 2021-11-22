@@ -1,6 +1,6 @@
 ---
 blog_date: 2021-01-22T00:00:00.000Z
-title: A Truly Arbitrary Blog Site
+title: A Truly Arbitrary Blog Post
 tag: Story Time
 author: The Arbitrary Author
 image: /assets/villa-maria.jpg
