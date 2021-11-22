@@ -1,7 +1,7 @@
 ---
 blog_date: 2021-04-20T00:00:00.000Z
 title: Motivation. Want it, Need it, and will do about anything for it.
-tag: Motivation
+tag: Gratitude
 author: The Arbitrary Author
 image: /assets/benjamin-sklivas-serving-cv.png
 ---
