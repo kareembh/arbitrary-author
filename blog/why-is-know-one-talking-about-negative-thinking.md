@@ -1,7 +1,7 @@
 ---
 blog_date: 2021-04-12T00:00:00.000Z
 title: Why is know one talking about Negative Thinking?
-tag: Motivation
+tag: Gratitude
 author: The Arbitrary Author
 image: /assets/montreal-skyline-winter.jpg
 ---
